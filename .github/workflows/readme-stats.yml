@@ -1,6 +1,11 @@
 name: Generate README Stats
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/readme-stats.yml"
   schedule:
     - cron: "0 1 * * *"
   workflow_dispatch:
